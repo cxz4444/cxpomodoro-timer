@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>番茄时钟提醒</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Noto Sans SC', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #fdfbfb, #ebedee);
+            height: 100vh;
+        }
+
+        .message {
+            font-size: 3rem;
+            color: #333;
+            padding: 40px;
+            text-align: center;
+            border: 3px solid #4CAF50;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="message" id="message"></div>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const msg = params.get('msg') || '请注意休息或开始工作！';
+        document.getElementById('message').textContent = msg;
+        // 20秒后自动关闭弹窗
+        setTimeout(() => window.close(), 20000);
+    </script>
+</body>
+
+</html>

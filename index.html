@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>晨曦番茄时钟</title>
+    <!-- 引入 Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="timer-container">
+            <h1 class="title">晨曦番茄时钟</h1>
+            <div class="timer-display">
+                <span id="minutes">25</span>:<span id="seconds">00</span>
+            </div>
+            <div class="timer-controls">
+                <button id="startBtn" class="btn">开始</button>
+                <button id="pauseBtn" class="btn" disabled>暂停</button>
+                <button id="resetBtn" class="btn">重置</button>
+            </div>
+            <div class="session-info">
+                <p>已完成番茄钟: <span id="completedSessions">0</span></p>
+                <button id="resetSessionsBtn" class="btn-small">重置计数</button>
+            </div>
+            <div class="stats-panel">
+                <div class="stat-item">
+                    <div class="stat-label">今日专注</div>
+                    <div class="stat-value" id="dailyFocus">0 分钟</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">连续天数</div>
+                    <div class="stat-value" id="streakDays">0 天</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="settings-container">
+            <button id="settingsBtn" class="btn-settings">⚙️ 设置</button>
+        </div>
+
+        <!-- 设置模态框 -->
+        <div id="settingsModal" class="modal">
+            <div class="modal-content">
+                <h2>设置</h2>
+                <div class="settings-form">
+                    <div class="setting-item">
+                        <label for="workDuration">工作时长 (分钟)</label>
+                        <input type="number" id="workDuration" min="1" max="60" value="25">
+                    </div>
+                    <div class="setting-item">
+                        <label for="shortBreakDuration">短休息时长 (分钟)</label>
+                        <input type="number" id="shortBreakDuration" min="1" max="30" value="5">
+                    </div>
+                    <div class="setting-item">
+                        <label for="longBreakDuration">长休息时长 (分钟)</label>
+                        <input type="number" id="longBreakDuration" min="15" max="20" value="15">
+                    </div>
+                </div>
+                <button id="saveSettings" class="btn">保存</button>
+                <button id="closeSettings" class="btn-close">×</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 庆祝动画容器 -->
+    <div id="celebration" class="celebration"></div>
+    <!-- 弹窗提示元素 -->
+    <div id="popup" class="popup"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
