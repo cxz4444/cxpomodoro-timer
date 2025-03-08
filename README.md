@@ -39,10 +39,11 @@ Since this project uses **Service Workers** and **Notifications**, it needs to b
 
 #### **🔹 Option 1: Python HTTP Server**
 Run the following command in the project folder:
+```markdown
 ```sh
 python -m http.server 5500
+```markdown
 Then open: [http://127.0.0.1:5500/](http://127.0.0.1:5500/)
-```sh
 ### 🔹 Option 2: VSCode Live Server
 
 - Install the **Live Server** extension in VSCode.
