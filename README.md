@@ -2,6 +2,8 @@
 
 **Dawn Pomodoro Timer** is a **simple yet powerful** web-based Pomodoro timer that helps you manage your work and break times effectively. Stay focused, boost productivity, and never miss a break! ⏳✨
 
+---
+
 ## 🔥 Key Features
 
 - **Auto Work & Break Cycles** ✅ - Automatically switches between work sessions and breaks based on the Pomodoro technique.
@@ -39,6 +41,7 @@ Since this project uses **Service Workers** and **Notifications**, it needs to b
 
 #### **🔹 Option 1: Python HTTP Server**
 Run the following command in the project folder:
+
 ```sh
 python -m http.server 5500
 ```
@@ -54,7 +57,7 @@ Then open: [http://127.0.0.1:5500/](http://127.0.0.1:5500/)
 - Upload the project files to a GitHub repository.
 - Go to **Settings > Pages**, set the branch to `main` and source to `/ (root)`.
 - GitHub will provide a link like this:  
-  👉 **[https://cxz4444.github.io/cxpomodoro-timer/](https://cxz4444.github.io/cxpomodoro-timer/)**
+  👉 **[Dawn Pomodoro Timer](https://cxz4444.github.io/cxpomodoro-timer/)**
 
 Now anyone can access your Pomodoro Timer online without installing anything! 🚀
 
@@ -71,12 +74,20 @@ Now anyone can access your Pomodoro Timer online without installing anything! �
 
 ---
 
+## ⚠️ Important Notice
+
+Remember to click on **“Cookies and site permissions”** from your browser settings, and then give the URL **“cxz4444.github.io”** permission for popups, redirects, and notifications.  
+If you are running locally, you should also give permission to the corresponding URL.  
+**Initial startup may require a reset, so refresh a few more times and click Start!**
+
+---
+
 ## ❓ FAQ
 
 ### ❔ Why don't notifications appear when watching full-screen videos?
 
-- Many browsers **suppress notifications** in full-screen mode to prevent distractions.
-- This project includes **a pop-up reminder** to ensure you get notified even when notifications are blocked.
+- Many browsers suppress notifications in full-screen mode to prevent distractions.
+- This project includes a pop-up reminder to ensure you get notified even when notifications are blocked.
 
 ### ❔ How can I enable notifications again if I blocked them?
 
@@ -89,7 +100,7 @@ Yes! Modify `styles.css` to adjust colors, fonts, and animations.
 
 ### ❔ Can I use this on my phone?
 
-Yes! This works on mobile browsers, but **pop-up reminders** may be blocked due to system restrictions.
+Yes! This works on mobile browsers, but pop-up reminders may be blocked due to system restrictions.
 
 ---
 
