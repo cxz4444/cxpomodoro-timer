@@ -37,23 +37,29 @@ Clone this repository or download the following files into the same directory:
 
 Since this project uses **Service Workers** and **Notifications**, it needs to be served over HTTP/HTTPS. You can start a local server using:
 
-#### **🔹 Option 1: Python HTTP Server**
+🔹 Option 1: Python HTTP Server
+
 Run the following command in the project folder:
-```sh
-**python -m http.server 5500**
 
-Then open: [http://127.0.0.1:5500/](http://127.0.0.1:5500/)
-### 🔹 Option 2: VSCode Live Server
+python -m http.server 5500
 
-- Install the **Live Server** extension in VSCode.
-- Open `index.html`, right-click, and select **"Open with Live Server"**.
+Then open: http://127.0.0.1:5500/
 
-### 🔹 Option 3: GitHub Pages (Recommended)
+🔹 Option 2: VSCode Live Server
 
-- Upload the project files to a GitHub repository.
-- Go to **Settings > Pages**, set the branch to `main` and source to `/ (root)`.
-- GitHub will provide a link like this:  
-  👉 **[https://cxz4444.github.io/cxpomodoro-timer/](https://cxz4444.github.io/cxpomodoro-timer/)**
+Install the Live Server extension in VSCode.
+
+Open index.html, right-click, and select "Open with Live Server".
+
+🔹 Option 3: GitHub Pages (Recommended)
+
+Upload the project files to a GitHub repository.
+
+Go to Settings > Pages, set the branch to main and source to / (root).
+
+GitHub will provide a link like this:👉 https://cxz4444.github.io/cxpomodoro-timer/
+
+
 
 Now anyone can access your Pomodoro Timer online without installing anything! 🚀
 
